@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./to-do.css" />
+</head>
+
+<body>
+    <h1 class="header">To-do list</h1>
+    <div class="container">
+
+        <!--Where the to-do task will be contained as Li-->
+        <ul class="todoContainer" id="todoContain">
+
+        </ul>
+        <div class="image-container">
+            <img id="todoImg" src="./undraw_To_do_list_re_9nt7.svg" style="width: 250px; height: auto;">
+            <h3 id="getStarted" style="color: white;">Add a task to get started</h3>
+        </div>
+        <!--user input for to-do tasks-->
+        <div class="input">
+            <input id="todoTxt" type="text" placeholder="e.g update cv">
+            <span id="addBtn">
+                <i class="fas fa-plus-square" id="add"></i>
+                <i class="fas fa-edit" onclick="editfunc()" style="display: none;" id="edit"></i>
+            </span>
+        </div>
+    </div>
+</body>
+<script src="./script.js">
+
+</script>
+
+</html>
